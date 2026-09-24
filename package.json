@@ -1,0 +1,19 @@
+{
+  "name": "reliability-quality-suite",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup:sut": "node scripts/setup-sut.mjs",
+    "test": "playwright test",
+    "test:api": "playwright test tests/api.spec.ts",
+    "test:ui": "playwright test tests/ui.spec.ts",
+    "test:report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "^24.0.0",
+    "typescript": "~5.9.0"
+  }
+}
